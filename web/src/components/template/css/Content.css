@@ -1,0 +1,6 @@
+.Content{
+	grid-area: content;
+}
+*{
+	color: black;
+}

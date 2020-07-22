@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "picture": "https://cc.uenf.br/imagens/anabel.png",
+      "title": "Annabell del Real Tamariz",
+      "noticy": "Professora Associada, Doutora em Engenharia Elétrica pela Unicamp-Brasil (2005), com graduação em Ciências da Computação. Atualmente, trabalha na area de pesquisa de Inteligência Artificial"
+    },
+    {
+      "id": "2",
+      "picture": "https://cc.uenf.br/imagens/ausberto.png",
+      "title": "Ausberto Castro",
+      "noticy": "Professor Associado, Doutor em Ciência da Computação pela UFRGS - Brasil (1996), com graduação em Ciências Matemática. Atualmente trabalha na área de pesquisa de Engharia de Software"
+    },
+    {
+      "id": "3",
+      "picture": "https://cc.uenf.br/imagens/tang.png",
+      "title": "Fermín Tang",
+      "noticy": "Professor Associado, Doutor em Engenharia de Produção pela UFRJ - Brasil (2004), com graduação em Pesquisa Operacional. Atualmente trabalha na área de pesquisa de Otimização e Raciocínio Automático."
+    },
+    {
+      "id": "4",
+      "picture": "https://cc.uenf.br/imagens/rivera.png",
+      "title": "Luis Rivera",
+      "noticy": "Professor Associado, Doutor em Ciência da Computação pela PUC-Rio - Brasil (2000), com graduação em Ciência da Computação. Atualmente trabalha na área de pesquisa de Computação Visual e Interação Humano-Computador."
+    }
+  ]
+}

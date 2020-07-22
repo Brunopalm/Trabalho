@@ -1,0 +1,9 @@
+.Footer{
+	grid-area: footer;
+	background-color: #1da4f2;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 10px; 
+
+}

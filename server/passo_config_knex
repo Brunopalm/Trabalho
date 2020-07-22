@@ -1,0 +1,9 @@
+npm install --global --save knex 
+
+knex init - cria arquivo de config
+
+knex migrate:make "nome_da_migrate" criar as migrates
+
+knex migrate:latest - em ordem
+
+knex migrate: rollback - oposto

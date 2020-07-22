@@ -1,0 +1,27 @@
+.Menu{
+	grid-area: menu;
+	width: 100vw;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	padding-left: 10px; 
+	z-index: 1;
+}
+.content-menu{
+	background-color: #1da4f2;
+	width: 250px;
+	height: calc(100vh - 40px);
+
+}
+.no-content-menu{
+	width: calc(100vw - 250px);
+	height: calc(100vh - 40px);
+}
+@media (min-width: 990px) {
+	.content-menu{
+		display: none;
+	}   
+	.no-content-menu{
+		display: none;
+	}
+}

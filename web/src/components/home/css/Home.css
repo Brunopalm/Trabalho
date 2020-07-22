@@ -1,0 +1,77 @@
+/* -- Capa principal -- */
+.capa-sup {
+  font-family: helvetica, arial, sans-serif;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+.capa {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 40px);
+  width: 100vw;
+}
+.inside-capa {
+  height: 60vh;
+}
+.particles {
+  position: absolute;
+  height: 60vh;
+  width: 100%;
+  pointer-events: none;
+}
+.alter-position {
+  position: inherit !important;
+}
+
+.imagem-capa {
+  height: 7rem;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.inside-capa-sup {
+  pointer-events: none;
+  position: relative;
+  text-align: center;
+  color: white;
+  letter-spacing: -0.01em;
+  letter-spacing: -0.1em;
+}
+.img-capa {
+  height: 20vh;
+}
+.img-capa img {
+  height: 100%;
+}
+/* -- Botões -- */
+.button-capa {
+  display: flex;
+  height: 55vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-custom {
+  padding: 1.3vh;
+  pointer-events: visible;
+  margin: 2vh;
+  border-radius: 0.25rem;
+  color: #01579b;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+  border: 2px solid #1da4f2;
+}
+
+@media (min-width: 880px) {
+  .imagem-capa {
+    height: 9rem;
+  }
+}
+
+/*@media (max-width: 990px) {
+    .img-slider {
+        height: 75vh
+    }
+}*/

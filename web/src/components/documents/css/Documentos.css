@@ -1,0 +1,181 @@
+@gray-darker: #444444;
+@gray-dark: #696969;
+@gray: #999999;
+@gray-light: #cccccc;
+@gray-lighter: #ececec;
+@gray-lightest: lighten(@gray-lighter,4%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.btn {
+  background-color: white;
+  border: 1px solid @gray-light;
+  color: @gray-dark;
+  padding: 0.5rem;
+  text-transform: lowercase;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0.4;
+}
+.btn-sup {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  max-width: 1100px;
+  z-index: 1;
+}
+ul .btn-sup {
+  width: inherit;
+  justify-content: flex-end;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  width: 100vw;
+  padding: 1rem;
+}
+
+.documents .card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  max-height: 100vh;
+  width: 80vw;
+  min-width: 200px;
+  max-width: 1100px;
+  flex-direction: column;
+  z-index: 0;
+  min-height: 200px;
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__title {
+  color: @gray-dark;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  padding-top: 30px;
+  line-height: 1.5;
+  max-height: 150px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 500px) {
+  .card__text {
+  }
+}
+
+.medium-editor-action * {
+  color: white !important;
+}
+.card-document-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*****************************/
+.material-button-sup {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  z-index: 1;
+}
+.material-button,
+.alt-2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ed2553;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+}
+
+.material-button .shape,
+.alt-2 .shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.material-button .shape:before,
+.alt-2 .shape:before,
+.material-button .shape:after,
+.alt-2 .shape:after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(360deg);
+  -webkit-transform: translate(-50%, -50%) rotate(360deg);
+  -ms-transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.material-button .shape:before,
+.alt-2 .shape:before {
+  width: 25px;
+  height: 4px;
+}
+
+.material-button .shape:after,
+.alt-2 .shape:after {
+  height: 25px;
+  width: 4px;
+}
+
+.material-button.active,
+.alt-2.active {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(0deg);
+  -webkit-transform: translate(50%, -50%) rotate(0deg);
+  -ms-transform: translate(50%, -50%) rotate(0deg);
+}
